@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_new">
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/landing_img_slide"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_marginTop="?actionBarSize"/>
+        <TextView
+            android:id="@+id/landing_txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="Just One Click !" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" >
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/facebookBtn"
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/facebook"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/signup_facebook_back"
+                android:text="Connect With Facebook"
+                android:paddingRight="60dp"
+                android:paddingLeft="30dp"
+                android:onClick="facebookLogin"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#416BC1"
+                android:textSize="15sp"/>
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/google_plus"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signup_facebook_back"
+            android:text="Connect With google"
+            android:paddingRight="60dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:onClick="googleSignIn"
+            android:textColor="@color/google_new"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
