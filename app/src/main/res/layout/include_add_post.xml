@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_item1"
+    android:orientation="vertical"
+    android:layout_marginTop="?actionBarSize"
+    android:layoutDirection="ltr">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/selectPhotoParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/camera"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/wight"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Share To World"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/addedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <EditText
+        android:id="@+id/postDiscET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/wight"
+        android:padding="10dp"
+        android:gravity="left|top"
+        android:textSize="14sp"
+        android:textColorHint="@color/wight"
+        android:hint="write something if you want ..."
+        />
+</LinearLayout>

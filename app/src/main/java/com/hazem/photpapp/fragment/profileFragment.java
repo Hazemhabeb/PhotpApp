@@ -196,4 +196,18 @@ public class profileFragment extends Fragment {
         });
     }
 
+
+
+
+    /**
+     * to stop the google client
+     */
+    @Override
+    public void onStop() {
+        super.onStop();
+        mGoogleApiClient.stopAutoManage(getActivity());
+        mGoogleApiClient.disconnect();
+    }
+
+
 }

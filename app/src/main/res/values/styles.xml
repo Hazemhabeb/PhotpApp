@@ -12,7 +12,7 @@
     <style name="Base.Theme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primary_new</item>
         <item name="colorPrimaryDark">@color/dark_new</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/a__</item>
         <item name="android:windowBackground">@color/colorAccent</item>
     </style>
 

@@ -10,5 +10,17 @@
         android:id="@+id/rvCards"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="horizontal"/>
+        android:scrollbars="horizontal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddTrip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/pencil"
+        app:backgroundTint="@color/a__"
+        app:fabSize="mini"
+        app:rippleColor="#fff" />
 </FrameLayout>
